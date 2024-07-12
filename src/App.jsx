@@ -67,7 +67,7 @@ export default function App() {
     ))
     
     return (
-        <main className="app">
+        <main>
             {tenzies && <Confetti />}
             <h1 className="title">Tenzies <FontAwesomeIcon icon={faDice} style={{color: "#e11414",}} /></h1>
             

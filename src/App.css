@@ -7,11 +7,17 @@ body {
   background-color: #FDE68A;
   padding: 20px;
   font-family: 'Karla', sans-serif;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 main {
   background-color: #C4B5FD;
-  height: 400px;
+  height: auto;
+  min-height: 400px;
+  width: 90%;
   max-width: 800px;
   border-radius: 10px;
   padding: 20px;
@@ -35,6 +41,7 @@ main {
   font-weight: 400;
   margin-top: 0;
   text-align: center;
+  max-width: 80%;
 }
 
 .dice-container {
@@ -78,4 +85,37 @@ main {
 
 .roll-dice:active {
   box-shadow: inset 5px 5px 10px -3px rgba(0, 0, 0, 0.7);
+}
+
+@media (max-width: 600px) {
+  main {
+    padding: 15px;
+  }
+
+  .title {
+    font-size: 32px;
+  }
+
+  .instructions {
+    font-size: 14px;
+  }
+
+  .dice-container {
+    gap: 10px;
+  }
+
+  .die-face {
+    height: 40px;
+    width: 40px;
+  }
+
+  .die-num {
+    font-size: 1.5rem;
+  }
+
+  .roll-dice {
+    height: 40px;
+    width: 120px;
+    font-size: 1rem;
+  }
 }
